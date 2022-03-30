@@ -5,8 +5,10 @@ Function the makes the computer chooses randomly a number
 3 = scissors 
 */
 
-const userSelection = 'rock';
-const computerSelection = computerPlays();
+
+const userSelection = null;
+const computerSelection = null;
+
 
 function computerPlays() {
     let randomChoice = Math.round(Math.random() * 2 + 1);
@@ -22,19 +24,21 @@ function computerPlays() {
     }
     return computerChoice;
 }
-/*
-function userPlays(userChoice) {
+
+function userPlays() {
     userChoice = (prompt("Rock-Paper-Scissors?")).toLowerCase();;
     return userChoice;
 }
-*/
 
 function playRound(userSelection, computerSelection) {
+
+    userSelection = userPlays();
+    computerSelection = computerPlays();
 
     if (userSelection == "rock") {
         if (computerSelection == "paper") {
             //console.log("You lose! Paper beats rock.");
-            return "User lose" 
+            return "User lose"
         } else if (computerSelection == "scissors") {
             //console.log("You win! Rock beats scissors.");
             return "User win"
@@ -67,7 +71,8 @@ function playRound(userSelection, computerSelection) {
     }
 
 }
-/*
+
+
 function game() {
     let computerScore = 0;
     let userScore = 0;
@@ -82,13 +87,12 @@ function game() {
             computerScore++
         }
         console.log(`SCORE\nYou: ${userScore}\nComputer: ${computerScore}`)
-    } 
+    }
     if (userScore > computerScore) {
         console.log("YOU WIN");
-    } else if (userScore < computerScore){
+    } else if (userScore < computerScore) {
         console.log("YOU LOSE")
     } else {
         console.log("TIE")
     }
 }
-*/
