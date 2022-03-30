@@ -5,6 +5,9 @@ Function the makes the computer chooses randomly a number
 3 = scissors 
 */
 
+const userSelection = 'rock';
+const computerSelection = computerPlays();
+
 function computerPlays() {
     let randomChoice = Math.round(Math.random() * 2 + 1);
     switch (randomChoice) {
@@ -19,54 +22,52 @@ function computerPlays() {
     }
     return computerChoice;
 }
-
-function userPlays() {
-    let userChoice = (prompt("Rock-Paper-Scissors?")).toLowerCase();
+/*
+function userPlays(userChoice) {
+    userChoice = (prompt("Rock-Paper-Scissors?")).toLowerCase();;
     return userChoice;
 }
+*/
 
-function playRound() {
+function playRound(userSelection, computerSelection) {
 
-    let computerChoice = computerPlays();
-    let userChoice = userPlays();
-
-    if (userChoice == "rock") {
-        if (computerChoice == "paper") {
-            console.log("You lose! Paper beats rock.");
+    if (userSelection == "rock") {
+        if (computerSelection == "paper") {
+            //console.log("You lose! Paper beats rock.");
             return "User lose" 
-        } else if (computerChoice == "scissors") {
-            console.log("You win! Rock beats scissors.");
+        } else if (computerSelection == "scissors") {
+            //console.log("You win! Rock beats scissors.");
             return "User win"
         } else {
-            console.log(`Tie! You and the computer chose ${userChoice}!\nBoth get 1 point.`);
+            //console.log(`Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`);
             return "Tie"
         }
-    } else if (userChoice == "paper") {
-        if (computerChoice == "rock") {
-            console.log("You win! Paper beats rock.");
+    } else if (userSelection == "paper") {
+        if (computerSelection == "rock") {
+            //console.log("You win! Paper beats rock.");
             return "User win"
-        } else if (computerChoice == "scissors") {
-            console.log("You lose! Scissors beats paper.")
+        } else if (computerSelection == "scissors") {
+            //console.log("You lose! Scissors beats paper.")
             return "User lose"
         } else {
-            console.log(`Tie! You and the computer chose ${userChoice}!\nBoth get 1 point.`);
+            //console.log(`Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`);
             return "Tie"
         }
-    } else if (userChoice == "scissors") {
-        if (computerChoice == "rock") {
-            console.log("You lose! Rock beats scissors.")
+    } else if (userSelection == "scissors") {
+        if (computerSelection == "rock") {
+            //console.log("You lose! Rock beats scissors.")
             return "User lose"
-        } else if (computerChoice == "paper") {
-            console.log("You win! Scissors beats paper.")
+        } else if (computerSelection == "paper") {
+            //console.log("You win! Scissors beats paper.")
             return "User win"
         } else {
-            console.log(`Tie! You and the computer chose ${userChoice}!\nBoth get 1 point.`);
+            //console.log(`Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`);
             return "Tie"
         }
     }
 
 }
-
+/*
 function game() {
     let computerScore = 0;
     let userScore = 0;
@@ -90,3 +91,4 @@ function game() {
         console.log("TIE")
     }
 }
+*/
