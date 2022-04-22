@@ -74,7 +74,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "User lose"
             } else if (computerSelection == "scissors") {
                 userScore += 1;
                 showScore();
@@ -84,7 +83,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "User win"
             } else {
                 computerScore += 1;
                 userScore += 1;
@@ -95,7 +93,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "Tie"
             }
         } else if (userSelection == "paper") {
             if (computerSelection == "rock") {
@@ -107,7 +104,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "User win"
             } else if (computerSelection == "scissors") {
                 computerScore += 1;
                 showScore();
@@ -117,7 +113,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "User lose"
             } else {
                 computerScore += 1;
                 userScore += 1;
@@ -128,7 +123,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "Tie"
             }
         } else if (userSelection == "scissors") {
             if (computerSelection == "rock") {
@@ -140,7 +134,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "User lose"
             } else if (computerSelection == "paper") {
                 userScore += 1;
                 showScore();
@@ -150,7 +143,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "User win"
             } else {
                 computerScore += 1;
                 userScore += 1;
@@ -161,7 +153,6 @@ function playRound(userSelection, computerSelection) {
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
-                // return "Tie"
             }
         }
 
