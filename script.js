@@ -39,12 +39,8 @@ function endOfGame() {
     playAgainButton.textContent = "PLAY AGAIN";
     choices.appendChild(playAgainButton);
     playAgainButton.addEventListener("click", function (event) {
-        playAgain();
+        document.location.reload();;
     });
-}
-
-function playAgain() {
-    document.location.reload();
 }
 
 function showWinner() {
