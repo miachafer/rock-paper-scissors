@@ -48,22 +48,16 @@ function playAgain() {
 }
 
 function showWinner() {
+    const endOfPlay = document.createElement('div');
     if (userScore > computerScore) {
-        const endOfPlay = document.createElement('div');
         endOfPlay.textContent = "End of play! YOU WON!"
-        choices.appendChild(endOfPlay);
-        endOfGame();
     } else if (userScore < computerScore) {
-        const endOfPlay = document.createElement('div');
         endOfPlay.textContent = "End of play! The computer won!"
-        choices.appendChild(endOfPlay);
-        endOfGame();
     } else {
-        const endOfPlay = document.createElement('div');
         endOfPlay.textContent = "End of play! It's a TIE!"
-        choices.appendChild(endOfPlay);
-        endOfGame();
     }
+    choices.appendChild(endOfPlay);
+    endOfGame();
 }
 
 // Main function of playing 
