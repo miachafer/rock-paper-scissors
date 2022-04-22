@@ -34,6 +34,12 @@ function showScore() {
     computerScr.textContent = computerScore;
 }
 
+function endOfGame() {
+    const playAgainButton = document.createElement('button');
+    playAgainButton.textContent = "PLAY AGAIN";
+    choices.appendChild(playAgainButton);
+}
+
 // Main function of playing 
 function playRound(userSelection, computerSelection) {
 
@@ -54,6 +60,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "User lose"
             } else if (computerSelection == "scissors") {
@@ -67,6 +74,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "User win"
             } else {
@@ -81,6 +89,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "Tie"
             }
@@ -96,6 +105,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "User win"
             } else if (computerSelection == "scissors") {
@@ -109,6 +119,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "User lose"
             } else {
@@ -123,6 +134,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "Tie"
             }
@@ -138,6 +150,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "User lose"
             } else if (computerSelection == "paper") {
@@ -151,6 +164,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "User win"
             } else {
@@ -165,6 +179,7 @@ function playRound(userSelection, computerSelection) {
                     const endOfPlay = document.createElement('div');
                     endOfPlay.textContent = "End of play!"
                     choices.appendChild(endOfPlay);
+                    endOfGame();
                 }
                 // return "Tie"
             }
