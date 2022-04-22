@@ -47,6 +47,25 @@ function playAgain() {
     document.location.reload();
 }
 
+function showWinner() {
+    if (userScore > computerScore) {
+        const endOfPlay = document.createElement('div');
+        endOfPlay.textContent = "End of play! YOU WON!"
+        choices.appendChild(endOfPlay);
+        endOfGame();
+    } else if (userScore < computerScore) {
+        const endOfPlay = document.createElement('div');
+        endOfPlay.textContent = "End of play! The computer won!"
+        choices.appendChild(endOfPlay);
+        endOfGame();
+    } else {
+        const endOfPlay = document.createElement('div');
+        endOfPlay.textContent = "End of play! It's a TIE!"
+        choices.appendChild(endOfPlay);
+        endOfGame();
+    }
+}
+
 // Main function of playing 
 function playRound(userSelection, computerSelection) {
 
@@ -64,10 +83,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "User lose"
             } else if (computerSelection == "scissors") {
@@ -78,10 +94,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "User win"
             } else {
@@ -93,10 +106,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "Tie"
             }
@@ -109,10 +119,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "User win"
             } else if (computerSelection == "scissors") {
@@ -123,10 +130,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "User lose"
             } else {
@@ -138,10 +142,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "Tie"
             }
@@ -154,10 +155,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "User lose"
             } else if (computerSelection == "paper") {
@@ -168,10 +166,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "User win"
             } else {
@@ -183,10 +178,7 @@ function playRound(userSelection, computerSelection) {
                 choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
-                    const endOfPlay = document.createElement('div');
-                    endOfPlay.textContent = "End of play!"
-                    choices.appendChild(endOfPlay);
-                    endOfGame();
+                    showWinner();
                 }
                 // return "Tie"
             }
