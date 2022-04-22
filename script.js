@@ -38,6 +38,13 @@ function endOfGame() {
     const playAgainButton = document.createElement('button');
     playAgainButton.textContent = "PLAY AGAIN";
     choices.appendChild(playAgainButton);
+    playAgainButton.addEventListener("click", function (event) {
+        playAgain();
+    });
+}
+
+function playAgain() {
+    document.location.reload();
 }
 
 // Main function of playing 
@@ -54,7 +61,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = "You lose! Paper beats rock."
-                choices.appendChild(divScore);                
+                choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     const endOfPlay = document.createElement('div');
@@ -113,7 +120,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = "You lose! Scissors beats paper."
-                choices.appendChild(divScore);                
+                choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     const endOfPlay = document.createElement('div');
@@ -128,7 +135,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = `Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`
-                choices.appendChild(divScore);                
+                choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     const endOfPlay = document.createElement('div');
@@ -158,7 +165,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = "You win! Scissors beats paper."
-                choices.appendChild(divScore);                
+                choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     const endOfPlay = document.createElement('div');
@@ -173,7 +180,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = `Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`
-                choices.appendChild(divScore);                
+                choices.appendChild(divScore);
                 console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     const endOfPlay = document.createElement('div');
