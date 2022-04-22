@@ -71,7 +71,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = "You lose! Paper beats rock."
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -82,7 +81,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = "You win! Rock beats scissors."
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -94,7 +92,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = `Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -106,8 +103,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = "You win! Paper beats rock."
-                choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
+                choices.appendChild(divScore);                
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -117,8 +113,7 @@ function playRound(userSelection, computerSelection) {
                 showScore();
                 const divScore = document.createElement('div');
                 divScore.textContent = "You lose! Scissors beats paper."
-                choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
+                choices.appendChild(divScore);                
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -130,7 +125,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = `Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -143,7 +137,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = "You lose! Rock beats scissors."
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -154,7 +147,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = "You win! Scissors beats paper."
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
@@ -166,7 +158,6 @@ function playRound(userSelection, computerSelection) {
                 const divScore = document.createElement('div');
                 divScore.textContent = `Tie! You and the computer chose ${userSelection}!\nBoth get 1 point.`
                 choices.appendChild(divScore);
-                console.log("Computer Score: " + computerScore + "\nUser Score: " + userScore)
                 if (userScore == 5 || computerScore == 5) {
                     showWinner();
                 }
